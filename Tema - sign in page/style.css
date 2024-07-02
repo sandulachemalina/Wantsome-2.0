@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: url("iPhone\ 15\ Pro.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+.signin-container {
+    height: 469px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #101010;
+    padding: 30px 40px;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    margin-top: 14px;
+    padding: 14px;
+}
+
+.input-box input {
+    width: 300px;
+    height: 30px;
+    margin: 10px 0;
+    background-color: transparent;
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    outline: none;
+    color: white;
+    padding: 20px 45px 20px 20px;
+}
+
+.signin-container .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: 10px;
+    color: white;
+}
+
+.remember-forgot label {
+    display: flex;
+    align-items: center;
+}
+
+.remember-forgot input {
+    margin-right: 10px;
+}
+
+.remember-forgot a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn {
+    width: 100%;
+    height: 44px;
+    border: none;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.or-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    color: white;
+}
+
+.or-divider::before,
+.or-divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid white;
+}
+
+.or-divider::before {
+    margin-right: 5px;
+}
+
+.or-divider::after {
+    margin-left: 5px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 8px;
+}
+
+.icons button {
+    background-color: #101010;
+    border: none;
+}
+
+.icons img {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 26px;
+    color: white;
+    margin: 20px 0 15px;
+}
+
+.register-link a {
+    color: white;
+}
+
+.input-box input,
+.input-box label {
+    display: block;
+    color: white;
+}
+
+@media screen and (max-width: 1023px) {
+    body {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 40%;
+        z-index: -1;
+        background-size: cover;
+        background-position: top;
+    }
+
+    .signin-container {
+        width: 100%;
+        padding: 20px;
+        margin-top: 500px;
+        box-shadow: none;
+    }
+
+    .input-box input {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .remember-forgot {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .remember-forgot label {
+        margin-bottom: 10px;
+    }
+
+    .or-divider {
+        margin: 15px 0;
+    }
+
+    .icons {
+        gap: 10px;
+    }
+
+    .register-link {
+        margin-top: 20px;
+    }
+}
