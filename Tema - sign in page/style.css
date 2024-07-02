@@ -136,6 +136,14 @@ h1 {
     color: white;
 }
 
+.input-box input.valid {
+    border-color: green;
+}
+
+.input-box input.invalid {
+    border-color: red;
+}
+
 @media screen and (max-width: 1023px) {
     body {
         position: absolute;
